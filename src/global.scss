@@ -24,3 +24,64 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+ion-alert.custom-alert {
+    --backdrop-opacity: 0.7;
+    // background-color: red;
+  }
+  .alert-wrapper .ion-overlay-wrapper{
+    background-color: red;
+  }
+  .custom-alert .alert-button-group {
+    padding: 8px;
+    --background: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items to the start on the Y-axis */
+    justify-content: center;
+  }
+  .custom-alert {
+    --background: #FFF;
+
+}
+  button.alert-button.alert-button-confirm , button.alert-button.alert-button-cancel {
+    color: #98A2B3;
+    /* Text/M/Text M Semibold */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 100px;
+    
+    margin: 0;
+    padding-right: 10px;
+  }
+  button.alert-button.alert-button-cancel{
+    border-right: 1px #D5DCE0 solid;
+  }
+  .alert-head{
+    display: none;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .md button.alert-button.alert-button-confirm {
+    border-radius: 4px;
+  }
+
+  
+  .ios .custom-alert button.alert-button {
+    border: 0.55px solid rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.2);
+  }
+  
+  .ios button.alert-button.alert-button-cancel {
+    border-right: 0;
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+  }
+  
+  .ios button.alert-button.alert-button-confirm {
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+  }

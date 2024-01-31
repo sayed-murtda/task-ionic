@@ -1,0 +1,130 @@
+*{
+  font-family: Roboto;
+}
+.card {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    border: 1px solid var(--Colors-Border-border-primary, #D0D5DD);
+    background: #FFF;
+
+}
+
+  .card-employee {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
+
+.N-M_P{
+  margin: 0;
+  padding: 0;
+}
+
+.title{
+  color: #667085;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.buttons{
+    border-radius: 8px;
+    --background-focused: #F9FAFB;
+
+color: #667085;
+--border-color: #667085;
+--border-style: solid;
+  --border-width: 1px;
+/* Text/S/Text S Semibold */
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.bords {
+  display: flex;
+  width: 500px;
+  min-height: 600px;
+  padding: var(--spacing-none, 0px) var(--spacing-none, 0px) var(--spacing-2xl, 20px) var(--spacing-2xl, 20px);
+  align-items: flex-start;
+  align-self: stretch;
+  white-space: nowrap;
+}
+
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  min-height: 700px;
+  .bord {
+    display: inline-block;
+    margin: 9px;
+    min-height: 500px;
+    width: 250px;
+
+  }
+  .bord-title{
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+    height: 60px;
+    position: relative;
+    padding-top: 5px;
+  }
+
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top:100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: white 2px solid;
+  color: white;text-align: center;
+  padding-top: 4px;
+}
+
+.border-title-text{
+  color: white;text-align: center;
+}
+.card-body{
+  margin-top: 20px;
+  min-height: 300px;
+}
+.card-employee{
+  display: flex;
+ 
+ 
+width: 232px;
+padding: 8px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid #D0D5DD;
+background: #F2F4F7;
+}
+.card-button{
+  width: 100%;
+  --background: red;
+ --border-radius: 5px;
+}
+
+app-emp-card{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
